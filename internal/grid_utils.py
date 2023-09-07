@@ -172,7 +172,7 @@ def interpolate_based_on_local_coordinates(
   y = y.reshape(-1, s, *y.shape[1:])
   if config.triplane_resolution > 0:
     if config.sparse_grid_resolution > 0:
-      sparse_grid_y, y = y.split([8], axis=1)
+      sparse_grid_y, y = y._split([8], axis=1)
     r = triplane_interpolate_based_on_local_coordinates(
         y, triplane_positions_local, axis=1
     )
