@@ -38,6 +38,7 @@ https://docs.conda.io/en/latest/miniconda.html#linux-installers
 - Activate conda environment:\
 `conda activate merf`
 - Install Python dependencies:\
+`pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html`
 `pip install -r requirements.txt`
 - Install pycolmap:\
 `git clone https://github.com/rmbrualla/pycolmap.git ./internal/pycolmap`
