@@ -1,2 +1,3 @@
 Config.triplane_resolution = 2048
 Config.sparse_grid_resolution = 512
+Config.gradient_accumulation_steps = 32
